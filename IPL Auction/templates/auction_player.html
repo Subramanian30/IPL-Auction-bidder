@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction Page</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('sold') }}">sold Players</a></li>
+            <li><a href="{{ url_for('unsold_players') }}">Unsold Players</a></li>
+            <li><a href="{{ url_for('analytics') }}">Analytics</a></li>
+            <li><a href="{{ url_for('logout') }}">logout</a></li>
+        </ul>
+    </nav>
+    <h1>Auction for {{ player.name }}</h1>
+    <p>Age: {{ player.age }}</p>
+    <p>Role: {{ player.role }}</p>
+    <p>Batting: {{ player.batting }}</p>
+    <p>Bowling: {{ player.bowling }}</p>
+    <p>Base Price: {{ player.base_price }}</p>
+    <p>Current Bid: {{ current_bid.bid_amount }}</p>
+
+    <form method="post" action="{{ url_for('auction') }}">
+        <label for="bid">Place Bid:</label>
+        <input type="number" id="bid" name="bid" placeholder="Enter bid amount" readonly value="{{ current_bid.bid_amount }}">
+        <button type="button" onclick="increaseBid()">Increase Bid by 20L</button>
+        <input type="submit" value="Place Bid">
+    </form>
+
+    <!-- Script for increasing bid amount -->
+    <script>
+        function increaseBid() {
+            var bidInput = document.getElementById('bid');
+            var currentBidAmount = parseFloat(bidInput.value) || 0;
+            var basePrice = parseFloat("{{ base_price }}") || 0;
+            
+            // Increase bid amount by 20L relative to the base price
+            var increasedBidAmount = currentBidAmount + 2000000;
+
+            // If the current bid is equal to or less than the base price, start from the base price + 20L
+            if (currentBidAmount <= basePrice) {
+                increasedBidAmount = basePrice + 2000000;
+            }
+
+            bidInput.value = increasedBidAmount;
+        }
+    </script>
+    <script>
+        setInterval(function(){
+            location.reload();
+        }, 15000);
+    </script>
+</body>
+</html>
+
+    
+

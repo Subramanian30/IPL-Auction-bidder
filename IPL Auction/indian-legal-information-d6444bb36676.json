@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "indian-legal-information",
+  "private_key_id": "d6444bb36676ad73c42003bc805ceeab870e59bb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC5BftxDd8pUd6/\nvJdapyUEsTf0OCyWan2NBF5jWkCzFoTMFHPEYYSfB68l5g9a3I4j9MUTZMOmvaMW\nN44+oBIfDNxL5FqkrgQ1lFIyPX1FD+SlivPBYE04QUcu6v45A6lEUt3UQOw+rPhQ\nfydB8aisHEJvscEtVg7KHWt2eiHXq1bIL2fv+Iw0rw3nO/Nv92hYh66CBKNLtqtj\nXNUGooFZqK7vaSiNPWIHDUQx03yZfkdBHWn4qbh6kmLMoFzrF027XA5hccYgdTRs\ne5L1a4IoTkTkooFSiC52Y6n7y10QWxNujiLKaJ8gIVxbSs3mafDttvOjbQlQFzmy\n0YIFUy5HAgMBAAECggEABun7UGk1SqT9juqsOT3/uyIoNh8XQ3OtR2S/ZjUML+UK\nh1nITbFbNFokKGVlc37EbQGLj8L3MLbrbjwbO6ndo31migt5e6fpDluBitETak5C\nvBDqNPK1UAHYeB9d6qGBZMU39uOKMHlkOhXWULeIFw5jSSs6TchmexUIXAAKXbXA\nFlA6xbK8e8ZZ1OhXFbPu+AcoxYmuJxV0PkQo3O70MQXJMHRyHqroEbvNJPsvftdY\n1hvRvFhwr6Uc+1gybnzt9Pi0wK5r/TcuncHmx31wh0phfo/GAJKP6YoIOHRGpyhO\nSiy9G16a1fKnrxrH/OHekttcRas6v+dHswemXAxiIQKBgQDohYjLPv+3DAOkSZim\n7b2mb0kNqlab6RK1rmXKBvnNCKxTZdOL0EZLDPSGPeRXhN9FITQmfPG0OsJAROnx\nVvhgL7nH7R8pPFzgOOx0jdC4mp+cllqpf2Z5RSxJkPxzkzIPYuVVek5kZxTQW3D8\nbolfiDRGA+7Bw//Szc48YF7jMQKBgQDLtKmicrjW/K3A35R0v8sXhviCCX6afLXM\n9+2fHIdzMfEmg6oKYX8dLpXhTr0GItqgIU5c3hDC6FcgE/n4uvgZkF+B/1Un9QLq\n1sjefpQzKNFie+7ueNx05OnWsncyuIn5pYc3tzOb/BuIkzFoIn025mfnh+vJJ1Gr\nBHDIByMa9wKBgHXLmHZmzwM7meizxBrlHAviGt9KaSAJHopd9IE5sXlWqH6Den09\nIS9KO+J6HmDcFoQeAx5wc757egc3IlE6Xw/Tfcmz7fJk+yQ4kkmlwpSS+MNKRFnU\nCeTrzzjhs5MVgenbjxUTpf0lX50ChiXMFdoI1XqW6XDOS57O1mkt5UQxAoGBALr3\nvxsTIQRyNyhoDeJ6hvW5NC5meIVjIZpXlQoNLWVV2Xj4MAIHKpymPXrmwif3paKD\n72DdkZTTm+QdcboSIdWU5ZRzvr1F7L+PFB7jHzM1q7kw90R6Oh4wXVBpzW4IYtt4\nSnug8wWgh8T7FMX3oeXZ5FRmNMwUAqltEfcGVfpRAoGAArtFsNJZ2DKyLREs2uzO\n38NaP8hwjZKCHVm5RlKG9sg1KYgjfZ8GgmtkNZfuX79rymlRPQmROkcuBUA90oiR\nVU1RxiFNYoXMqRSY8d3y5UVrkXQeF5hSQYC35QE05wVXUxpBV4RN3mEscC2V5Gj3\nmcgLMEhH75rpNtsMNX2bOVw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "indian-law@indian-legal-information.iam.gserviceaccount.com",
+  "client_id": "115848458599504816457",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/indian-law%40indian-legal-information.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

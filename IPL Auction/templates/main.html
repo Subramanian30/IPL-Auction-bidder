@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Sheet Display</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('auction') }}">Auction</a></li>
+            <li><a href="{{ url_for('unsold_players') }}">Unsold Players</a></li>
+            <li><a href="{{ url_for('analytics') }}">Analytics</a></li>
+            <li><a href="{{ url_for('logout') }}">logout</a></li>
+            <!-- <li><a href="{{ url_for('login') }}">Analytics</a></li> -->
+        </ul>
+    </nav>
+    <form action="/" method="get">
+        <label for="team">Filter by Team:</label>
+        <input type="text" id="team" name="team">
+        <input type="submit" value="Apply Filter">
+    </form>
+    <table border="1">
+        <tr>
+            <th>Player</th>
+            <th>Role</th>
+            <th>Bid Amount</th>
+            <th>Team Name</th>
+        </tr>
+        {% for row in data %}
+            <tr>
+                <td>{{ row['Player'] }}</td>
+                <td>{{ row['Role'] }}</td>
+                <td>{{ row['Bid Amount'] }}</td>
+                <td>{{ row['Team Name'] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% if total_bid_amount %}
+        <p>Total Bid Amount: {{ total_bid_amount }}</p>
+    {% endif %}
+</body>
+</html>

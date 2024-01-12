@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auctioneer Dashboard</title>
+</head>
+<body>
+    <h1>Auctioneer Dashboard</h1>
+    <form method="post" action="{{ url_for('auctioneer') }}">
+        <label for="selected_player">Select Player:</label>
+        <select id="selected_player" name="selected_player">
+            {% for player in players %}
+                <option value="{{ player.name }}">{{ player.name }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Trigger Auction">
+    </form>
+
+    {% if active_auction %}
+        <form method="post" action="{{ url_for('close_auction', player=active_auction) }}">
+            <input type="submit" value="Close Bidding for {{ active_auction }}">
+        </form>
+    {% endif %}
+</body>
+</html>

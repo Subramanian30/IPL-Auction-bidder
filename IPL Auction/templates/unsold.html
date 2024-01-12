@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yet to be sold Players</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('auction') }}">Auction</a></li>
+            <li><a href="{{ url_for('sold') }}">sold Players</a></li>
+            <li><a href="{{ url_for('analytics') }}">Analytics</a></li>
+            <li><a href="{{ url_for('logout') }}">logout</a></li>
+        </ul>
+    </nav>
+    
+    
+    <h1>Unsold Players</h1>
+    <ul>
+        {% for player in data %}
+            <li>{{ player }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
